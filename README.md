@@ -17,4 +17,4 @@ bash env.sh
 # 数据集下载
 > https://extremevision-js-userfile.oss-cn-hangzhou.aliyuncs.com/user-28826-files/26498ebe-895d-453f-9e68-4729b8a1721b/subject_data.tar.gz
 
-**注释：之前的数据集有些问题，已经处理妥当，需要验证结果请下载数据集，并在图片上进行推理**
+**注释：之前的数据集有些问题，已经处理妥当，需要验证结果请下载数据集，并在图片上进行推理.**
