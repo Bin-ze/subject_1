@@ -63,7 +63,7 @@ class Inference:
         self.detection_model = init_detector(detection_config, detection_checkpoint, device=device)
         self.segmentation_model = init_detector(segmentation_config, segmentation_checkpoint, device=device)
 
-        self.path = ''
+        self.window = 'seg_det_res'
         self.conf = conf
         self.prefix = ['jpg', 'jpeg', 'png'] # input prefix
 
@@ -144,7 +144,8 @@ class Inference:
     def show_or_save(self, view_img=False, imwrite=True):
 
         if view_img:
-            cv2.imshow(str(self.path + self.img_path), self.im)
+            cv2.namedWindow(self.window)
+            cv2.imshow(self.window, self.im)
             cv2.waitKey(1)  # 1 millisecond
         if imwrite:
             cv2.imwrite('{}/{}'.format(self.save_path, self.img_path), self.im)
