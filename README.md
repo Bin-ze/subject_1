@@ -3,6 +3,7 @@ bash env.sh
 
 # 运行项目代码
 > cd demo
+
 > python subject_inference.py
 
 **注释： subject_inference.py里Infer类实现了检测分割的所有所需接口，可以根据需要进行结果返回，打印，画图，保存等操作，在运行时，请载入相应的配置文件地址，以及模型权重地址,调用相应接口展示结果，后续需要根据其他课题组的需要拓展对应的接口。**
