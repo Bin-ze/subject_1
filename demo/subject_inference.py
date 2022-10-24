@@ -188,7 +188,7 @@ class Inference:
         if plot:
             self.plot_seg(seg_mask, seg_labels)
             self.plot_bbox(det_bboxes, det_labels, det_conf)
-            self.show_or_save(view_img=False, imwrite=False)
+            self.show_or_save(view_img=True, imwrite=False)
 
         return (det_bboxes, det_labels, det_conf), (seg_mask, seg_labels, seg_bboxes), self.im
 
@@ -202,7 +202,7 @@ if __name__ == '__main__':
     parser.add_argument('--img_folder', type=str, default='/mnt/data/guozebin/subject_1/subject_1/data/detection/JPEGImages', help='infer img path')
     parser.add_argument('--detection_config', type=str, default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolox_tiny_8x8_300e_coco/yolox_tiny_8x8_300e_coco.py', help='model config path')
     parser.add_argument('--segmentation_config', type=str, default='/mnt/data/guozebin/subject_1/subject_1/configs/_sugject_1/yolact_r50_1x8_coco.py', help='model config path')
-    parser.add_argument('--detection_checkpoint', type=str, default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolox_tiny_8x8_300e_coco/epoch_30.pth', help='use infer model path')
+    parser.add_argument('--detection_checkpoint', type=str, default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolox_tiny_8x8_300e_coco/best_bbox_mAP_epoch_49.pth', help='use infer model path')
     parser.add_argument('--segmentation_checkpoint', type=str, default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolact_r50_1x8_coco/epoch_55.pth', help='use infer model path')
     parser.add_argument('--save_path', type=str, default='/mnt/data/guozebin/subject_1/subject_1/infer_result', help='infer result save path')
     parser.add_argument('--device', type=str, default='cuda:2', help='device')
@@ -226,8 +226,10 @@ if __name__ == '__main__':
         img_paths.append(args.img_folder + '/' + i.replace('xml', 'jpg'))
 
     # loop run
-    for img in img_paths:
+    t1 = time.time()
+    for img in img_paths[:100]:
         whole_img = img
-        t1 = time.time()
-        inf(input_image=whole_img, plot=True)
-        print('inference_time：', time.time() - t1)
+        #t1 = time.time()
+        inf(input_image=whole_img, plot=False)
+        #print('inference_time：', time.time() - t1)
+    print('total', time.time() - t1)

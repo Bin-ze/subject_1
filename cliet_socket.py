@@ -3,10 +3,19 @@ import gzip
 import struct
 import time
 from io import BytesIO
+import os
 from socket import *
 from PIL import Image
 
-for i in range(100):
+annotation_folder = '/mnt/data/guozebin/subject_1/subject_1/data/detection/Annotations'
+img_folder = '/mnt/data/guozebin/subject_1/subject_1/data/detection/JPEGImages'
+img_paths = []
+path = os.listdir(annotation_folder)
+for i in path:
+    if 'xml' not in i: continue
+    img_paths.append(img_folder + '/' + i.replace('xml', 'jpg'))
+
+for img in img_paths[:100]:
     t1 = time.time()
     # 1.创建套接字
     tcp_socket = socket(AF_INET,SOCK_STREAM)
@@ -16,7 +25,7 @@ for i in range(100):
     tcp_socket.connect((serve_ip, serve_port))  # 连接服务器，建立连接,参数是元组形式
 
     #准备需要传送的数据
-    img = Image.open('/mnt/data/guozebin/subject_1/subject_1/data/detection/JPEGImages/0000_color.jpg')
+    img = Image.open(img)
     imgIO = BytesIO()  # 创建文件对象，类型：io.BytesIO
     img.save(imgIO, 'JPEG')  # 以JPEG格式存储，减少数据大小
 
@@ -39,10 +48,10 @@ for i in range(100):
 
     #从服务器接收数据
     #注意这个1024byte，大小根据需求自己设置
-    from_server_msg = tcp_socket.recv(10240)
-    #加上.decode("gbk")可以解决乱码
-    print(from_server_msg.decode("utf-8"))
-    #关闭连接
-    #tcp_socket.close()
-    print(time.time()-t1)
-    tcp_socket.close()
+    # from_server_msg = tcp_socket.recv(10240)
+    # #加上.decode("gbk")可以解决乱码
+    # print(from_server_msg.decode("utf-8"))
+    # #关闭连接
+    # #tcp_socket.close()
+    # print(time.time()-t1)
+    # tcp_socket.close()

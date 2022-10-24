@@ -39,7 +39,7 @@ if __name__ == "__main__":
                         default='/mnt/data/guozebin/subject_1/subject_1/configs/_sugject_1/yolact_r50_1x8_coco.py',
                         help='model config path')
     parser.add_argument('--detection_checkpoint', type=str,
-                        default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolox_tiny_8x8_300e_coco/epoch_30.pth',
+                        default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolox_tiny_8x8_300e_coco/best_bbox_mAP_epoch_49.pth',
                         help='use infer model path')
     parser.add_argument('--segmentation_checkpoint', type=str,
                         default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolact_r50_1x8_coco/epoch_55.pth',
