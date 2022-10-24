@@ -39,6 +39,7 @@ class Colors:
     def hex2rgb(h):  # rgb order (PIL)
         return tuple(int(h[1 + i:1 + i + 2], 16) for i in (0, 2, 4))
 
+colors = Colors()
 
 class Inference:
     def __init__(self, config, checkpoint, save_path, device, conf):
@@ -187,9 +188,9 @@ class Inference:
         if plot:
             self.plot_seg(seg_mask, seg_labels)
             self.plot_bbox(det_bboxes, det_labels, det_conf)
-            self.show_or_save(view_img=False, imwrite=True)
+            self.show_or_save(view_img=False, imwrite=False)
 
-        return (det_bboxes, det_labels, det_conf), (seg_mask, seg_labels, seg_bboxes)
+        return (det_bboxes, det_labels, det_conf), (seg_mask, seg_labels, seg_bboxes), self.im
 
 
 if __name__ == '__main__':
