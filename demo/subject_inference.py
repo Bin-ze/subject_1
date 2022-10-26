@@ -93,7 +93,7 @@ class Inference:
         self.data_triplet = self.sub2_load_json(path_Text_triplet)
         self.data_scene = self.sub2_load_json(path_Scene_triplet)
         self.detection_names_subject2 = ('地标', '长凳', '桌子', '小石头', '柱子', '木门槛', '椅子', '砖头')
-        self.segmentation_names_subject2 = ('草地', '水泥地', '木板地', '楼梯', '斜坡', '山地', '鹅卵石地面')
+        self.segmentation_names_subject2 = ('草地', '水泥地', '木板地', '楼梯', '斜坡', '沙地', '鹅卵石地面')
 
         # subject_3 model
         self.subject_3_model = ActionPredict().to(device)
@@ -208,6 +208,7 @@ class Inference:
                 data_dict[self.segmentation_names_subject2[label]] = [[int(n) for n in bbox[:4].tolist()]]
 
         return data_dict
+
     def formot_subject_2(self, det_dict, seg_dict):
         data_dict = collections.defaultdict(list)
         det_dict.update(seg_dict)
@@ -216,6 +217,7 @@ class Inference:
             data_dict['框坐标'].append(v[0])
 
         return dict(data_dict)
+
     def subject_3_infer(self, det_dict):
 
         im = self.im.copy()
