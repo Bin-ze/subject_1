@@ -1,0 +1,227 @@
+{
+    "斜坡": [
+        {
+            "head": "斜坡",
+            "tail": "木门槛",
+            "relation": "后方"
+        },
+        {
+            "head": "斜坡",
+            "tail": "楼梯",
+            "relation": "左前方"
+        },
+        {
+            "head": "斜坡",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ],
+    "楼梯": [
+        {
+            "head": "楼梯",
+            "tail": "斜坡",
+            "relation": "右后方"
+        },
+        {
+            "head": "楼梯",
+            "tail": "水泥地",
+            "relation": "位于"
+        },
+        {
+            "head": "楼梯",
+            "tail": "椅子",
+            "relation": "前方"
+        }
+    ],
+    "椅子1": [
+        {
+            "head": "椅子",
+            "tail": "斜坡",
+            "relation": "后方"
+        },
+        {
+            "head": "椅子",
+            "tail": "楼梯",
+            "relation": "左方"
+        },
+        {
+            "head": "椅子",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ],
+    "椅子": [
+        {
+            "head": "椅子",
+            "tail": "桌子",
+            "relation": "左方"
+        },
+        {
+            "head": "椅子",
+            "tail": "楼梯",
+            "relation": "后方"
+        },
+        {
+            "head": "椅子",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ],    
+    "长凳": [
+        {
+            "head": "长凳",
+            "tail": "砖头",
+            "relation": "左方"
+        },
+        {
+            "head": "长凳",
+            "tail": "小石头",
+            "relation": "左方"
+        },
+        {
+            "head": "长凳",
+            "tail": "鹅卵石地面",
+            "relation": "左后方"
+        },        
+        {
+            "head": "长凳",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ],
+    "桌子": [
+        {
+            "head": "桌子",
+            "tail": "楼梯",
+            "relation": "后方"
+        },
+        {
+            "head": "桌子",
+            "tail": "椅子",
+            "relation": "右方"
+        },        
+        {
+            "head": "桌子",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ],    
+    "花池": [
+        {
+            "head": "花池",
+            "tail": "砖头",
+            "relation": "右方"
+        },
+        {
+            "head": "花池",
+            "tail": "小石头",
+            "relation": "右方"
+        },
+        {
+            "head": "花池",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ],
+    "砖头": [
+        {
+            "head": "砖头",
+            "tail": "长凳",
+            "relation": "右方"
+        },
+        {
+            "head": "砖头",
+            "tail": "花池",
+            "relation": "左方"
+        },
+        {
+            "head": "砖头",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ],
+    "小石头": [
+        {
+            "head": "小石头",
+            "tail": "长凳",
+            "relation": "右方"
+        },
+        {
+            "head": "小石头",
+            "tail": "花池",
+            "relation": "左方"
+        },
+        {
+            "head": "小石头",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ],
+    "草地": [
+        {
+            "head": "草地",
+            "tail": "沙地",
+            "relation": "左方"
+        },
+        {
+            "head": "草地",
+            "tail": "鹅卵石地面",
+            "relation": "右方"
+        }
+    ],
+    "沙地": [
+        {
+            "head": "沙地",
+            "tail": "草地",
+            "relation": "右方"
+        },
+        {
+            "head": "沙地",
+            "tail": "鹅卵石地面",
+            "relation": "右方"
+        }
+    ],
+    "鹅卵石地面1": [
+        {
+            "head": "鹅卵石地面",
+            "tail": "斜坡",
+            "relation": "右方"
+        }       
+    ],    
+    "鹅卵石地面": [
+        {
+            "head": "鹅卵石地面",
+            "tail": "草地",
+            "relation": "左方"
+        },
+        {
+            "head": "鹅卵石地面",
+            "tail": "沙地",
+            "relation": "左方"
+        },
+        {
+            "head": "鹅卵石地面",
+            "tail": "长凳",
+            "relation": "右前方"
+        }        
+    ],
+    "木门槛": [
+        {
+            "head": "木门槛",
+            "tail": "水泥地",
+            "relation": "位于"
+        },
+        {
+            "head": "木门槛",
+            "tail": "斜坡",
+            "relation": "前方"
+        }
+    ],
+    "柱子": [
+        {
+            "head": "柱子",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ]
+}

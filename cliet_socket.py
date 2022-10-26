@@ -1,4 +1,3 @@
-import base64
 import gzip
 import struct
 import time
@@ -15,13 +14,13 @@ for i in path:
     if 'xml' not in i: continue
     img_paths.append(img_folder + '/' + i.replace('xml', 'jpg'))
 
-for img in img_paths[:100]:
+for img in img_paths[:1000]:
     t1 = time.time()
     # 1.创建套接字
     tcp_socket = socket(AF_INET,SOCK_STREAM)
     # 2.准备连接服务器，建立连接
     serve_ip = "192.168.2.43"
-    serve_port = 8085  #端口，比如8000
+    serve_port = 8080  #端口，比如8000
     tcp_socket.connect((serve_ip, serve_port))  # 连接服务器，建立连接,参数是元组形式
 
     #准备需要传送的数据

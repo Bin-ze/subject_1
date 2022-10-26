@@ -23,13 +23,11 @@ if __name__ == '__main__':
                         stream=sys.stdout,
                         format="%(asctime)s | %(filename)s:%(lineno)d | %(levelname)s | %(message)s")
     parser = argparse.ArgumentParser()
-    parser.add_argument('--annotation_folder', type=str, default='/mnt/data/guozebin/subject_1/subject_1/data/detection/Annotations', help='infer annotations folder')
-    parser.add_argument('--img_folder', type=str, default='/mnt/data/guozebin/subject_1/subject_1/data/detection/JPEGImages', help='infer img path')
-    parser.add_argument('--detection_config', type=str, default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolox_tiny_8x8_300e_coco/yolox_tiny_8x8_300e_coco.py', help='model config path')
-    parser.add_argument('--segmentation_config', type=str, default='/mnt/data/guozebin/subject_1/subject_1/configs/_sugject_1/yolact_r50_1x8_coco.py', help='model config path')
-    parser.add_argument('--detection_checkpoint', type=str, default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolox_tiny_8x8_300e_coco/best_bbox_mAP_epoch_49.pth', help='use infer model path')
-    parser.add_argument('--segmentation_checkpoint', type=str, default='/mnt/data/guozebin/subject_1/subject_1/work_dirs/yolact_r50_1x8_coco/epoch_55.pth', help='use infer model path')
-    parser.add_argument('--save_path', type=str, default='/mnt/data/guozebin/subject_1/subject_1/infer_result', help='infer result save path')
+    parser.add_argument('--detection_config', type=str, default='work_dirs/yolox_tiny_8x8_300e_coco/yolox_tiny_8x8_300e_coco.py', help='model config path')
+    parser.add_argument('--segmentation_config', type=str, default='configs/_sugject_1/yolact_r50_1x8_coco.py', help='model config path')
+    parser.add_argument('--detection_checkpoint', type=str, default='work_dirs/yolox_tiny_8x8_300e_coco/best_bbox_mAP_epoch_49.pth', help='use infer model path')
+    parser.add_argument('--segmentation_checkpoint', type=str, default='work_dirs/yolact_r50_1x8_coco/epoch_55.pth', help='use infer model path')
+    parser.add_argument('--save_path', type=str, default='./infer_result', help='infer result save path')
     parser.add_argument('--device', type=str, default='cuda:2', help='device')
     parser.add_argument('--conf', type=float, default=0.3, help='confidence')
     args = parser.parse_args()
@@ -43,15 +41,17 @@ if __name__ == '__main__':
     tcp_server = socket(AF_INET,SOCK_STREAM)
     #绑定ip，port
     #这里ip默认本机
-    address = ('192.168.2.43', 8085)
+    address = ('192.168.2.43', 8080)
     tcp_server.bind(address)
     #多少个客户端可以连接
     tcp_server.listen(128)
     print('start server')
     #使用listen将其变为被动的，这样就可以接收别人的链接了
+    a = 0
     while True:
         # 创建接收
         t1 = time.time()
+        a += 1
         # 如果有新的客户端来链接服务器，那么就产生一个新的套接字专门为这个客户端服务
         client_socket, clientAddr = tcp_server.accept()
         #接收对方发送过来的数据
@@ -72,6 +72,7 @@ if __name__ == '__main__':
             img = encode(imgBytes)
             inf(input_image=img, plot=True)
             print('infer time:', time.time() - t1)
+            print(a)
         #发送数据给客户端
         #send_data = client_socket.send("2222".encode("utf-8"))
         #关闭套接字

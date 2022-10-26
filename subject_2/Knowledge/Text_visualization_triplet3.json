@@ -1,0 +1,1537 @@
+{    "木门槛": [
+    {
+        "head": "木门槛",
+        "tail": "门槛",
+        "relation": "是"
+    },
+    {
+        "head": "木门槛",
+        "tail": "矩形",
+        "relation": "形状"
+    },
+    {
+        "head": "木门槛",
+        "tail": "材质",
+        "relation": "木质"
+    },
+    {
+        "head": "木门槛",
+        "tail": "障碍",
+        "relation": "是"
+    },
+    {
+        "head": "木门槛",
+        "tail": "阻隔",
+        "relation": "可用作"
+    }
+    ],
+    "砖头": [
+        {
+            "head": "砖头",
+            "tail": "建筑",
+            "relation": "可用作"
+        },
+        {
+            "head": "砖头",
+            "tail": "长方体",
+            "relation": "形状"
+        },
+        {
+            "head": "砖头",
+            "tail": "装饰",
+            "relation": "可用作"
+        },
+        {
+            "head": "砖头",
+            "tail": "障碍",
+            "relation": "是"
+        }
+        ],   
+    "柱子": [
+        {
+            "head": "柱子",
+            "tail": "建筑",
+            "relation": "可用作"
+        },
+        {
+            "head": "柱子",
+            "tail": "长方体",
+            "relation": "形状"
+        },
+        {
+            "head": "柱子",
+            "tail": "装饰",
+            "relation": "可用作"
+        },
+        {
+            "head": "柱子",
+            "tail": "承重",
+            "relation": "可用作"
+        },        
+        {
+            "head": "柱子",
+            "tail": "障碍",
+            "relation": "是"
+        }
+        ],            
+    "长凳": [
+        {
+            "head": "长凳",
+            "tail": "公共设施",
+            "relation": "是"
+        },
+        {
+            "head": "长凳",
+            "tail": "长椅",
+            "relation": "是"
+        },
+        {
+            "head": "长凳",
+            "tail": "障碍",
+            "relation": "是"
+        },
+        {
+            "head": "长凳",
+            "tail": "坐下",
+            "relation": "可用作"
+        },
+        {
+            "head": "长凳",
+            "tail": "休息",
+            "relation": "可用作"
+        },
+        {
+            "head": "长凳",
+            "tail": "阻隔",
+            "relation": "具有特性"
+        },
+        {
+            "head": "长凳",
+            "tail": "矩形",
+            "relation": "具有特性"
+        },
+        {
+            "head": "长凳",
+            "tail": "美观",
+            "relation": "具有特性"
+        },
+        {
+            "head": "长凳",
+            "tail": "坚硬",
+            "relation": "具有特性"
+        },
+        {
+            "head": "长凳",
+            "tail": "路边",
+            "relation": "位于"
+        },
+        {
+            "head": "长凳",
+            "tail": "马路",
+            "relation": "位于"
+        }
+    ],
+    "花池": [
+        {
+            "head": "花池",
+            "tail": "区域",
+            "relation": "是"
+        },
+        {
+            "head": "花池",
+            "tail": "公共设施",
+            "relation": "是"
+        },
+        {
+            "head": "花池",
+            "tail": "构造物",
+            "relation": "是"
+        },
+        {
+            "head": "花池",
+            "tail": "障碍",
+            "relation": "是"
+        },
+        {
+            "head": "花池",
+            "tail": "阻隔",
+            "relation": "可用作"
+        },
+        {
+            "head": "花池",
+            "tail": "疏导",
+            "relation": "可用作"
+        },
+        {
+            "head": "花池",
+            "tail": "美化",
+            "relation": "可用作"
+        },
+        {
+            "head": "花池",
+            "tail": "装饰",
+            "relation": "可用作"
+        },
+        {
+            "head": "花池",
+            "tail": "遮挡",
+            "relation": "可用作"
+        },
+        {
+            "head": "花池",
+            "tail": "美观",
+            "relation": "具有特性"
+        },
+        {
+            "head": "花池",
+            "tail": "可绕过",
+            "relation": "具有特性"
+        },
+        {
+            "head": "花池",
+            "tail": "阻隔",
+            "relation": "具有特性"
+        },
+        {
+            "head": "花池",
+            "tail": "公园",
+            "relation": "位于"
+        },
+        {
+            "head": "花池",
+            "tail": "路边",
+            "relation": "位于"
+        },
+        {
+            "head": "花池",
+            "tail": "草地",
+            "relation": "位于"
+        },
+        {
+            "head": "花池",
+            "tail": "户外",
+            "relation": "位于"
+        }
+    ],
+    "普通楼梯": [
+        {
+            "head": "普通楼梯",
+            "tail": "楼梯",
+            "relation": "是"
+        }
+    ],
+    "斜坡": [
+        {
+            "head": "斜坡",
+            "tail": "地貌",
+            "relation": "是"
+        },
+        {
+            "head": "斜坡",
+            "tail": "地形",
+            "relation": "是"
+        },
+        {
+            "head": "斜坡",
+            "tail": "步行",
+            "relation": "可用作"
+        },
+        {
+            "head": "斜坡",
+            "tail": "上坡",
+            "relation": "可用作"
+        },
+        {
+            "head": "斜坡",
+            "tail": "下坡",
+            "relation": "可用作"
+        },
+        {
+            "head": "斜坡",
+            "tail": "单步上坡",
+            "relation": "可用作"
+        },
+        {
+            "head": "斜坡",
+            "tail": "单步下坡",
+            "relation": "可用作"
+        },
+        {
+            "head": "斜坡",
+            "tail": "倾斜",
+            "relation": "具有特性"
+        },
+        {
+            "head": "斜坡",
+            "tail": "可上坡",
+            "relation": "具有特性"
+        },
+        {
+            "head": "斜坡",
+            "tail": "可下坡",
+            "relation": "具有特性"
+        }
+    ],
+    "小石头": [
+        {
+            "head": "小石头",
+            "tail": "岩石",
+            "relation": "是"
+        },
+        {
+            "head": "小石头",
+            "tail": "凝结物",
+            "relation": "是"
+        },
+        {
+            "head": "小石头",
+            "tail": "建造",
+            "relation": "可用作"
+        },
+        {
+            "head": "小石头",
+            "tail": "铺垫",
+            "relation": "可用作"
+        },
+        {
+            "head": "小石头",
+            "tail": "水泥地",
+            "relation": "位于"
+        }
+    ],
+    "椅子": [
+        {
+            "head": "椅子",
+            "tail": "坐下",
+            "relation": "可用作"
+        },
+        {
+            "head": "椅子",
+            "tail": "小",
+            "relation": "具有特性"
+        },
+        {
+            "head": "椅子",
+            "tail": "轻",
+            "relation": "具有特性"
+        },
+        {
+            "head": "椅子",
+            "tail": "可绕过",
+            "relation": "具有特性"
+        },
+        {
+            "head": "椅子",
+            "tail": "阻隔",
+            "relation": "具有特性"
+        },
+        {
+            "head": "椅子",
+            "tail": "阻隔",
+            "relation": "具有特性"
+        },
+        {
+            "head": "椅子",
+            "tail": "客厅",
+            "relation": "位于"
+        },
+        {
+            "head": "椅子",
+            "tail": "卧室",
+            "relation": "位于"
+        }
+    ],
+    "草地": [
+        {
+            "head": "草地",
+            "tail": "地面",
+            "relation": "是"
+        },
+        {
+            "head": "草地",
+            "tail": "植被",
+            "relation": "是"
+        },
+        {
+            "head": "草地",
+            "tail": "地形",
+            "relation": "是"
+        },
+        {
+            "head": "草地",
+            "tail": "装饰",
+            "relation": "可用作"
+        },
+        {
+            "head": "草地",
+            "tail": "美化",
+            "relation": "可用作"
+        },
+        {
+            "head": "草地",
+            "tail": "疏导",
+            "relation": "可用作"
+        },
+        {
+            "head": "草地",
+            "tail": "阻隔",
+            "relation": "可用作"
+        },
+        {
+            "head": "草地",
+            "tail": "步行",
+            "relation": "可用作"
+        },
+        {
+            "head": "草地",
+            "tail": "路面变化",
+            "relation": "导致"
+        },
+        {
+            "head": "草地",
+            "tail": "柔软",
+            "relation": "具有特性"
+        },
+        {
+            "head": "草地",
+            "tail": "潮湿",
+            "relation": "具有特性"
+        },
+        {
+            "head": "草地",
+            "tail": "不平整",
+            "relation": "具有特性"
+        },
+        {
+            "head": "草地",
+            "tail": "绿色",
+            "relation": "具有特性"
+        },
+        {
+            "head": "草地",
+            "tail": "吸水",
+            "relation": "具有特性"
+        },
+        {
+            "head": "草地",
+            "tail": "美观",
+            "relation": "具有特性"
+        },
+        {
+            "head": "草地",
+            "tail": "可行走",
+            "relation": "具有特性"
+        },
+        {
+            "head": "草地",
+            "tail": "户外",
+            "relation": "位于"
+        },
+        {
+            "head": "草地",
+            "tail": "草坪",
+            "relation": "同义词"
+        }
+    ],
+    "沙地": [
+        {
+            "head": "沙地",
+            "tail": "地面",
+            "relation": "是"
+        },
+        {
+            "head": "沙地",
+            "tail": "地形",
+            "relation": "是"
+        },
+        {
+            "head": "沙地",
+            "tail": "疏导",
+            "relation": "可用作"
+        },
+        {
+            "head": "沙地",
+            "tail": "阻隔",
+            "relation": "可用作"
+        },
+        {
+            "head": "沙地",
+            "tail": "路面变化",
+            "relation": "导致"
+        },
+        {
+            "head": "沙地",
+            "tail": "柔软",
+            "relation": "具有特性"
+        },
+        {
+            "head": "沙地",
+            "tail": "不平整",
+            "relation": "具有特性"
+        },
+        {
+            "head": "沙地",
+            "tail": "干燥",
+            "relation": "具有特性"
+        },
+        {
+            "head": "沙地",
+            "tail": "黄色",
+            "relation": "具有特性"
+        },
+        {
+            "head": "沙地",
+            "tail": "吸水",
+            "relation": "具有特性"
+        },
+        {
+            "head": "沙地",
+            "tail": "流动",
+            "relation": "具有特性"
+        },
+        {
+            "head": "沙地",
+            "tail": "粗糙",
+            "relation": "具有特性"
+        },
+        {
+            "head": "沙地",
+            "tail": "可行走",
+            "relation": "具有特性"
+        },
+        {
+            "head": "沙地",
+            "tail": "户外",
+            "relation": "位于"
+        },
+        {
+            "head": "沙地",
+            "tail": "沙土地",
+            "relation": "同义词"
+        }
+    ],
+    "鹅卵石地面": [
+        {
+            "head": "鹅卵石地面",
+            "tail": "地面",
+            "relation": "是"
+        },
+        {
+            "head": "鹅卵石地面",
+            "tail": "地形",
+            "relation": "是"
+        },
+        {
+            "head": "鹅卵石地面",
+            "tail": "阻隔",
+            "relation": "可用作"
+        },
+        {
+            "head": "鹅卵石地面",
+            "tail": "路面变化",
+            "relation": "导致"
+        },
+        {
+            "head": "鹅卵石地面",
+            "tail": "不平整",
+            "relation": "具有特性"
+        },
+        {
+            "head": "鹅卵石地面",
+            "tail": "粗糙",
+            "relation": "具有特性"
+        },
+        {
+            "head": "鹅卵石地面",
+            "tail": "鹅卵石地",
+            "relation": "同义词"
+        }
+    ],    
+    "水泥地": [
+        {
+            "head": "水泥地",
+            "tail": "地面",
+            "relation": "是"
+        },
+        {
+            "head": "水泥地",
+            "tail": "地形",
+            "relation": "是"
+        },
+        {
+            "head": "水泥地",
+            "tail": "美化",
+            "relation": "可用作"
+        },
+        {
+            "head": "水泥地",
+            "tail": "步行",
+            "relation": "可用作"
+        },
+        {
+            "head": "水泥地",
+            "tail": "单步行走",
+            "relation": "可用作"
+        },
+        {
+            "head": "水泥地",
+            "tail": "路面变化",
+            "relation": "导致"
+        },
+        {
+            "head": "水泥地",
+            "tail": "坚硬",
+            "relation": "具有特性"
+        },
+        {
+            "head": "水泥地",
+            "tail": "干燥",
+            "relation": "具有特性"
+        },
+        {
+            "head": "水泥地",
+            "tail": "灰色",
+            "relation": "具有特性"
+        },
+        {
+            "head": "水泥地",
+            "tail": "粗糙",
+            "relation": "具有特性"
+        },
+        {
+            "head": "水泥地",
+            "tail": "可行走",
+            "relation": "具有特性"
+        },
+        {
+            "head": "水泥地",
+            "tail": "户外",
+            "relation": "位于"
+        },
+        {
+            "head": "水泥地",
+            "tail": "水泥地面",
+            "relation": "同义词"
+        }
+    ],
+    "左转": [
+        {
+            "head": "左转",
+            "tail": "转弯",
+            "relation": "是"
+        },
+        {
+            "head": "左转",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "左转",
+            "tail": "向左",
+            "relation": "导致"
+        },
+        {
+            "head": "左转",
+            "tail": "站立",
+            "relation": "旨在"
+        },
+        {
+            "head": "左转",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "左转",
+            "tail": "路面变化",
+            "relation": "被影响"
+        },
+        {
+            "head": "左转",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "左转",
+            "tail": "阻隔",
+            "relation": "被影响"
+        },
+        {
+            "head": "左转",
+            "tail": "向左转",
+            "relation": "同义词"
+        }
+    ],
+    "右转": [
+        {
+            "head": "右转",
+            "tail": "转弯",
+            "relation": "是"
+        },
+        {
+            "head": "右转",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "右转",
+            "tail": "向右",
+            "relation": "导致"
+        },
+        {
+            "head": "右转",
+            "tail": "站立",
+            "relation": "旨在"
+        },
+        {
+            "head": "右转",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "右转",
+            "tail": "路面变化",
+            "relation": "被影响"
+        },
+        {
+            "head": "右转",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "右转",
+            "tail": "阻隔",
+            "relation": "被影响"
+        },
+        {
+            "head": "右转",
+            "tail": "向右转",
+            "relation": "同义词"
+        }
+    ],
+    "加速": [
+        {
+            "head": "加速",
+            "tail": "变速（加减速）",
+            "relation": "是"
+        },
+        {
+            "head": "加速",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "加速",
+            "tail": "快速",
+            "relation": "导致"
+        },
+        {
+            "head": "加速",
+            "tail": "慢速",
+            "relation": "旨在"
+        },
+        {
+            "head": "加速",
+            "tail": "稳定",
+            "relation": "旨在"
+        }
+    ],
+    "减速": [
+        {
+            "head": "减速",
+            "tail": "变速（加减速）",
+            "relation": "是"
+        },
+        {
+            "head": "减速",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "减速",
+            "tail": "慢速",
+            "relation": "导致"
+        },
+        {
+            "head": "减速",
+            "tail": "快速",
+            "relation": "旨在"
+        },
+        {
+            "head": "减速",
+            "tail": "稳定",
+            "relation": "旨在"
+        }
+    ],
+    "单步上楼梯": [
+        {
+            "head": "单步上楼梯",
+            "tail": "上楼梯",
+            "relation": "是"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "升高",
+            "relation": "导致"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "在楼上",
+            "relation": "导致"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "抬腿",
+            "relation": "子动作"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "楼梯",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "在楼下",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "路面变化",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步上楼梯",
+            "tail": "阻隔",
+            "relation": "被影响"
+        }
+    ],
+    "单步下楼梯": [
+        {
+            "head": "单步下楼梯",
+            "tail": "下楼梯",
+            "relation": "是"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "降低",
+            "relation": "导致"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "在楼下",
+            "relation": "导致"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "抬腿",
+            "relation": "子动作"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "楼梯",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "在楼上",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "路面变化",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步下楼梯",
+            "tail": "阻隔",
+            "relation": "被影响"
+        }
+    ],
+    "单步上坡": [
+        {
+            "head": "单步上坡",
+            "tail": "上坡",
+            "relation": "是"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "升高",
+            "relation": "导致"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "在坡上",
+            "relation": "导致"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "抬腿",
+            "relation": "子动作"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "斜坡",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "在坡下",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "路面变化",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步上坡",
+            "tail": "阻隔",
+            "relation": "被影响"
+        }
+    ],
+    "单步下坡": [
+        {
+            "head": "单步下坡",
+            "tail": "下坡",
+            "relation": "是"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "降低",
+            "relation": "导致"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "在坡下",
+            "relation": "导致"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "抬腿",
+            "relation": "子动作"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "斜坡",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "在坡上",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "路面变化",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步下坡",
+            "tail": "阻隔",
+            "relation": "被影响"
+        }
+    ],
+    "单步跨越": [
+        {
+            "head": "单步跨越",
+            "tail": "跨越",
+            "relation": "是"
+        },
+        {
+            "head": "单步跨越",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "单步跨越",
+            "tail": "跨越",
+            "relation": "导致"
+        },
+        {
+            "head": "单步跨越",
+            "tail": "小石头",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步跨越",
+            "tail": "站立",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步跨越",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步跨越",
+            "tail": "路面变化",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步跨越",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步跨越",
+            "tail": "阻隔",
+            "relation": "被影响"
+        }
+    ],
+    "起立": [
+        {
+            "head": "起立",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "起立",
+            "tail": "站立",
+            "relation": "导致"
+        },
+        {
+            "head": "起立",
+            "tail": "坐着",
+            "relation": "旨在"
+        },
+        {
+            "head": "起立",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "起立",
+            "tail": "站立",
+            "relation": "被影响"
+        },
+        {
+            "head": "起立",
+            "tail": "行走",
+            "relation": "被影响"
+        },
+        {
+            "head": "起立",
+            "tail": "站立",
+            "relation": "同义词"
+        },
+        {
+            "head": "起立",
+            "tail": "站起",
+            "relation": "同义词"
+        }
+    ],
+    "转弯": [
+        {
+            "head": "转弯",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "转弯",
+            "tail": "方向变换",
+            "relation": "导致"
+        },
+        {
+            "head": "转弯",
+            "tail": "站立",
+            "relation": "旨在"
+        },
+        {
+            "head": "转弯",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "转弯",
+            "tail": "转向",
+            "relation": "同义词"
+        }
+    ],
+    "停止": [
+        {
+            "head": "停止",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "停止",
+            "tail": "静止",
+            "relation": "导致"
+        },
+        {
+            "head": "停止",
+            "tail": "步行",
+            "relation": "旨在"
+        },
+        {
+            "head": "停止",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "停止",
+            "tail": "变速（加减速）",
+            "relation": "被影响"
+        },
+        {
+            "head": "停止",
+            "tail": "停下",
+            "relation": "同义词"
+        }
+    ],
+    "自适应步态变换": [
+        {
+            "head": "自适应步态变换",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "自适应步态变换",
+            "tail": "稳定",
+            "relation": "导致"
+        },
+        {
+            "head": "自适应步态变换",
+            "tail": "路面变化",
+            "relation": "旨在"
+        },
+        {
+            "head": "自适应步态变换",
+            "tail": "不稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "自适应步态变换",
+            "tail": "单步跨越",
+            "relation": "被影响"
+        },
+        {
+            "head": "自适应步态变换",
+            "tail": "变速（加减速）",
+            "relation": "被影响"
+        },
+        {
+            "head": "自适应步态变换",
+            "tail": "单步上楼梯",
+            "relation": "被影响"
+        },
+        {
+            "head": "自适应步态变换",
+            "tail": "单步下楼梯",
+            "relation": "被影响"
+        }
+    ],
+    "坐下": [
+        {
+            "head": "坐下",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "坐下",
+            "tail": "坐着",
+            "relation": "导致"
+        },
+        {
+            "head": "坐下",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "坐下",
+            "tail": "坐具",
+            "relation": "旨在"
+        },
+        {
+            "head": "坐下",
+            "tail": "行走",
+            "relation": "被影响"
+        },
+        {
+            "head": "坐下",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "坐下",
+            "tail": "坐着",
+            "relation": "被影响"
+        },
+        {
+            "head": "坐下",
+            "tail": "坐",
+            "relation": "同义词"
+        },
+        {
+            "head": "坐下",
+            "tail": "落座",
+            "relation": "同义词"
+        }
+    ],
+    "单步行走": [
+        {
+            "head": "单步行走",
+            "tail": "行走",
+            "relation": "是"
+        },
+        {
+            "head": "单步行走",
+            "tail": "动作",
+            "relation": "是"
+        },
+        {
+            "head": "单步行走",
+            "tail": "抬腿",
+            "relation": "子动作"
+        },
+        {
+            "head": "单步行走",
+            "tail": "站立",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步行走",
+            "tail": "稳定",
+            "relation": "旨在"
+        },
+        {
+            "head": "单步行走",
+            "tail": "路面变化",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步行走",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "单步行走",
+            "tail": "阻隔",
+            "relation": "被影响"
+        }
+    ],
+    "楼梯": [
+        {
+            "head": "楼梯",
+            "tail": "地形",
+            "relation": "是"
+        },
+        {
+            "head": "楼梯",
+            "tail": "上楼",
+            "relation": "可用作"
+        },
+        {
+            "head": "楼梯",
+            "tail": "下楼",
+            "relation": "可用作"
+        },
+        {
+            "head": "楼梯",
+            "tail": "步行",
+            "relation": "可用作"
+        },
+        {
+            "head": "楼梯",
+            "tail": "交通",
+            "relation": "可用作"
+        },
+        {
+            "head": "楼梯",
+            "tail": "连接",
+            "relation": "可用作"
+        },
+        {
+            "head": "楼梯",
+            "tail": "单步上楼梯",
+            "relation": "可用作"
+        },
+        {
+            "head": "楼梯",
+            "tail": "单步下楼梯",
+            "relation": "可用作"
+        },
+        {
+            "head": "楼梯",
+            "tail": "倾斜",
+            "relation": "具有特性"
+        },
+        {
+            "head": "楼梯",
+            "tail": "可上楼",
+            "relation": "具有特性"
+        },
+        {
+            "head": "楼梯",
+            "tail": "可下楼",
+            "relation": "具有特性"
+        }
+    ],
+    "信号灯": [
+        {
+            "head": "信号灯",
+            "tail": "指挥",
+            "relation": "可用作"
+        }
+    ],
+    "坐具": [
+        {
+            "head": "坐具",
+            "tail": "坐下",
+            "relation": "可用作"
+        },
+        {
+            "head": "坐具",
+            "tail": "休息",
+            "relation": "可用作"
+        }
+    ],
+    "板凳": [
+        {
+            "head": "板凳",
+            "tail": "坐下",
+            "relation": "可用作"
+        },
+        {
+            "head": "板凳",
+            "tail": "休息",
+            "relation": "可用作"
+        }
+    ],
+    "小石子": [
+        {
+            "head": "小石子",
+            "tail": "不稳定",
+            "relation": "导致"
+        },
+        {
+            "head": "小石子",
+            "tail": "小石头",
+            "relation": "同义词"
+        }
+    ],
+    "路面变化": [
+        {
+            "head": "路面变化",
+            "tail": "不稳定",
+            "relation": "导致"
+        }
+    ],
+    "不稳定": [
+        {
+            "head": "不稳定",
+            "tail": "摔倒",
+            "relation": "导致"
+        }
+    ],
+    "行走": [
+        {
+            "head": "行走",
+            "tail": "单步行走",
+            "relation": "子动作"
+        },
+        {
+            "head": "行走",
+            "tail": "走路",
+            "relation": "同义词"
+        }
+    ],
+    "上楼梯": [
+        {
+            "head": "上楼梯",
+            "tail": "单步上楼梯",
+            "relation": "子动作"
+        }
+    ],
+    "下楼梯": [
+        {
+            "head": "下楼梯",
+            "tail": "单步下楼梯",
+            "relation": "子动作"
+        }
+    ],
+    "上坡": [
+        {
+            "head": "上坡",
+            "tail": "单步上坡",
+            "relation": "子动作"
+        }
+    ],
+    "下坡": [
+        {
+            "head": "下坡",
+            "tail": "单步下坡",
+            "relation": "子动作"
+        }
+    ],
+    "变速（加减速）": [
+        {
+            "head": "变速（加减速）",
+            "tail": "路面变化",
+            "relation": "被影响"
+        },
+        {
+            "head": "变速（加减速）",
+            "tail": "不稳定",
+            "relation": "被影响"
+        },
+        {
+            "head": "变速（加减速）",
+            "tail": "阻隔",
+            "relation": "被影响"
+        }
+    ],
+    "客厅": [
+        {
+            "head": "客厅",
+            "tail": "室内",
+            "relation": "位于"
+        }
+    ],
+    "卧室": [
+        {
+            "head": "卧室",
+            "tail": "室内",
+            "relation": "位于"
+        }
+    ],
+    "路边": [
+        {
+            "head": "路边",
+            "tail": "户外",
+            "relation": "位于"
+        }
+    ],
+    "马路": [
+        {
+            "head": "马路",
+            "tail": "户外",
+            "relation": "位于"
+        }
+    ],
+    "石墩": [
+        {
+            "head": "石墩",
+            "tail": "石头墩子",
+            "relation": "同义词"
+        }
+    ],
+    "步行": [
+        {
+            "head": "步行",
+            "tail": "行走",
+            "relation": "同义词"
+        }
+    ],
+    "桌子": [
+        {
+            "head": "桌子",
+            "tail": "家具",
+            "relation": "是"
+        },
+        {
+            "head": "桌子",
+            "tail": "障碍",
+            "relation": "是"
+        },
+        {
+            "head": "桌子",
+            "tail": "障碍",
+            "relation": "是"
+        },
+        {
+            "head": "桌子",
+            "tail": "休息",
+            "relation": "可用作"
+        },
+        {
+            "head": "桌子",
+            "tail": "放置",
+            "relation": "可用作"
+        },
+        {
+            "head": "桌子",
+            "tail": "矩形",
+            "relation": "具有特性"
+        },
+        {
+            "head": "桌子",
+            "tail": "可绕过",
+            "relation": "具有特性"
+        },
+        {
+            "head": "桌子",
+            "tail": "阻隔",
+            "relation": "具有特性"
+        },
+        {
+            "head": "桌子",
+            "tail": "客厅",
+            "relation": "位于"
+        },
+        {
+            "head": "桌子",
+            "tail": "会客室",
+            "relation": "位于"
+        }
+    ]    
+}
