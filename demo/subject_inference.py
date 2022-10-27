@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 # __author__:bin_ze
 # 10/22/22 6:33 PM
-
+import os
+#os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 import json
 import logging
 import argparse
 import torch
 import collections
+from mmcv.runner import wrap_fp16_model
 
 # subject 3 import
 from subject_3.predicts.constant import action_list
@@ -80,7 +82,10 @@ class Inference:
         # instance model
         self.detection_model = init_detector(detection_config, detection_checkpoint, device=device)
         self.segmentation_model = init_detector(segmentation_config, segmentation_checkpoint, device=device)
-
+        fp16 =False
+        if fp16:
+            wrap_fp16_model(self.detection_model)
+            wrap_fp16_model(self.segmentation_model)
         self.window = 'seg_det_res'
         self.conf = conf
         self.prefix = ['jpg', 'jpeg', 'png']  # input prefix
@@ -349,11 +354,6 @@ class Inference:
             for k, v in dict(collections.Counter(labels)).items():
                 for j in range(v):
                     mask.append(result[1][k][j])
-        # plot
-        for index, mask_ in enumerate(mask):
-            color_mask = self.mask_colors[labels[index]]
-            mask_ = mask_.astype(bool)
-            self.im[mask_] = self.im[mask_] * 0.4 + color_mask * 0.6
 
         return mask, labels, bboxes
 
@@ -421,7 +421,7 @@ class Inference:
 
         # project 2 run
         data_dict = self.formot_subject_2(subject_2_dict, seg_dict)
-        object_all = self.sub2_listener(data_dict)
+        #object_all = self.sub2_listener(data_dict)
 
         #self.need_list.append(det_dict)
         # project 3 run
@@ -430,7 +430,7 @@ class Inference:
         if plot:
             self.plot_seg(seg_mask, seg_labels)
             self.plot_bbox(det_bboxes, det_labels, det_conf)
-            self.show_or_save(view_img=True, imwrite=False)
+            self.show_or_save(view_img=False, imwrite=False)
 
         return (det_bboxes, det_labels, det_conf), (seg_mask, seg_labels, seg_bboxes), self.im
 
@@ -467,10 +467,10 @@ if __name__ == '__main__':
         img_paths.append(args.img_folder + '/' + i.replace('xml', 'jpg'))
 
     # loop run
-    t1 = time.time()
-    for img in img_paths[:1000]:
+    t = time.time()
+    for img in img_paths[:100]:
         whole_img = img
         t1 = time.time()
-        inf(input_image=whole_img, plot=True)
+        inf(input_image=whole_img, plot=False)
         print('inference_time：', time.time() - t1)
-    #print('total', time.time() - t1)
+    print('total', time.time() - t)
