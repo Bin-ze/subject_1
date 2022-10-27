@@ -91,9 +91,9 @@ class Inference:
         self.prefix = ['jpg', 'jpeg', 'png']  # input prefix
 
         # subject 2
-        path_att_all = './subject_2/Knowledge/Attribute_triplet_dict_new_t8.json'
-        path_Text_triplet = './subject_2/Knowledge/Text_visualization_triplet3.json'
-        path_Scene_triplet = './subject_2/Knowledge/Scene_triplet-3.json'
+        path_att_all = '../subject_2/Knowledge/Attribute_triplet_dict_new_t8.json'
+        path_Text_triplet = '../subject_2/Knowledge/Text_visualization_triplet3.json'
+        path_Scene_triplet = '../subject_2/Knowledge/Scene_triplet-3.json'
         self.data_att = self.sub2_load_json(path_att_all)
         self.data_triplet = self.sub2_load_json(path_Text_triplet)
         self.data_scene = self.sub2_load_json(path_Scene_triplet)

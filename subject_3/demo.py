@@ -18,7 +18,7 @@ def model_init():
     num_class = 13
     model = RULSTM(num_class, 2048, 1024,
                    0.2, sequence_completion=True)
-    checkpoint = torch.load('./subject_3/models/best.pth.tar')['state_dict']
+    checkpoint = torch.load('../subject_3/models/best.pth.tar')['state_dict']
     model.load_state_dict(checkpoint)
     model.eval()
     return model
